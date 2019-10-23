@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Demo XSS Javascript</title>
+</head>
+<body>
+    <h1>XSS Demo</h1>
+    <script>
+    var url = document.URL; 
+    alert('URL' + url);
+    </script>
+    <script>alert('URL');</script>
+    <script>alert(document.cookie);</script>
+    <form method="xssdemo.html">
+        <input name="password" />
+        <input type="submit">do this</input>
+    </form>
+</body>
+</html>
